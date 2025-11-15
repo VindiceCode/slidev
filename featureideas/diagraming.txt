@@ -1,0 +1,19 @@
+ for AI diagramming:
+
+Prep
+
+I have a bunch of diagrams in my Claude projects as references. I have 1-2 or more references for each diagram type (logical block diagram, process flow diagram, architecture diagrams, swimlane etc.). Goes without saying, but I label them consistently as well.
+
+For each diagram type, I have a prompt that accompanies the diagram that helps me organize the description of the diagram, without getting into so much detail that i might as well do it manually.
+
+In my experience, the quality and consistency of reference diagrams play a huge role in getting this right.
+
+Process
+
+I kick off the prompt. It contains the role, context, ultimate objective, diagram type, colour scheme preferences, font preferences, diagram structure and success criteria. Most of it is prefilled. I fill in the blanks. It's typically bullet points with additional notes.
+
+The prompt requires Claude to create an SVG diagram. At this point, Claude usually gets it right in the first try.
+
+I then give this SVG code to Claude with another simple prompt to convert this into a draw.io compatible XML.
+
+8/10 times the draw.io diagram can be used without any issues. Just select everything, copy as image, paste into your presentation and you're done. With extremely complex diagrams, arrows get a little hairy. Still, 80% of the time aligning and editing is done.
